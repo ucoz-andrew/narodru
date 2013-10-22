@@ -138,10 +138,15 @@ h1 .maintitle {
 	position: relative;
 }
 .sites-ul {
+	position: relative;
+	left: 0;
 	white-space: nowrap;
+	font-size: 0;
 }
 .sites-ul li {
 	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 }
 .create-btn-block {
 	position: absolute;
@@ -160,9 +165,9 @@ h1 .maintitle {
 ----------------*/
 .f-column {
 	float: left;
-	width: 33%;
+	width: 33.33%;
+	*width: 33%;
 	margin: 50px 0;
-	padding: 0 30px;
 	border-left: 1px solid #e6e6e6;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -171,15 +176,18 @@ h1 .maintitle {
 .f-column:first-child {
 	border-left: 0;
 }
+.f-column a {
+	border-bottom: 1px dotted;
+}
 .f-column h3 {
 	margin: 0 0 35px 0;
-	padding: 0 0 0 19px;
+	padding: 0 0 0 49px;
 	font-size: 1.125em;
 	text-transform: uppercase;
 }
 .f-column ul {
 	margin: 0;
-	padding: 0;
+	padding: 0 30px;
 	list-style: none;
 	font-size: .875em;
 }
@@ -205,6 +213,7 @@ h1 .maintitle {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff !important;
+	outline: none;
 	border-radius: 7px;
 	background-color: #8cc152;
 	box-shadow: 0 3px #7e9467;
